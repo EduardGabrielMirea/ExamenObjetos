@@ -1,12 +1,12 @@
 package tiendainformatica;
 
-public class Ordenadores {
+public class Ordenador {
     private String marca;
     private String modelo;
     private int codigo;
     private int capacidadGb;
 
-    public Ordenadores(String marca, String modelo) {
+    public Ordenador(String marca, String modelo) {
         this.marca = marca;
         this.modelo = modelo;
     }
@@ -38,6 +38,6 @@ public class Ordenadores {
 
     @Override
     public String toString(){
-        return "Ordenador: "+ "\n"+"Nombre: "+this.marca +"\n"+"Modelo: "+this.modelo+ "\n\t"+"Codigo: "+this.codigo+"\n\t"+"Capacidad en Gb: "+this.capacidadGb +" Gb";
+        return "Ordenador: "+ "\n"+"Marca: "+this.marca +"\n"+"Modelo: "+this.modelo+ "\n\t"+"Codigo: "+this.codigo+"\n\t"+"Capacidad en Gb: "+this.capacidadGb +" Gb";
     }
 }

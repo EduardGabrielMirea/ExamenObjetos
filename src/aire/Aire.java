@@ -56,14 +56,14 @@ public class Aire {
       if (this.tempFinal +1 <= this.tempMax){
           this.tempFinal++;
       }else {
-          throw new IllegalArgumentException("La temperatura no puede superar "+this.tempMax);
+          throw new IllegalArgumentException("La temperatura del aire "+this.marca +" no puede superar "+this.tempMax);
       }
     }
     public void bajar(){
         if (this.tempFinal -1 >= this.tempMin){
             this.tempFinal--;
         }else {
-            throw new IllegalArgumentException("La temperatura no puede ser inferior a "+this.tempMin);
+            throw new IllegalArgumentException("La temperatura del aire "+this.marca+" no puede ser inferior a "+this.tempMin);
         }
     }
 

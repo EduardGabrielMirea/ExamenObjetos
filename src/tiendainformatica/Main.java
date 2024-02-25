@@ -5,10 +5,10 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        List<Ordenadores> ordenadores = new ArrayList<>();
-        Ordenadores o1 = new Ordenadores("Acer","RTX10");
-        Ordenadores o2 = new Ordenadores("Apple","IO20");
-        Ordenadores o3 = new Ordenadores("Asus","FORCEx");
+        List<Ordenador> ordenadores = new ArrayList<>();
+        Ordenador o1 = new Ordenador("Acer","RTX10");
+        Ordenador o2 = new Ordenador("Apple","IO20");
+        Ordenador o3 = new Ordenador("Asus","FORCEx");
 
         o1.setCodigo(127027);
         o1.setCapacidadGb(1000);
@@ -23,7 +23,7 @@ public class Main {
         ordenadores.add(o2);
         ordenadores.add(o3);
 
-        for (Ordenadores o : ordenadores){
+        for (Ordenador o : ordenadores){
             System.out.println("\n"+o);
         }
     }

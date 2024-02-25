@@ -8,7 +8,7 @@ public class Main {
         List<Aire> aires = new ArrayList<>();
 
         Aire a1 = new Aire("LG",40,0,2);
-        Aire a2 = new Aire("SAMSUNG",40,0,38);
+        Aire a2 = new Aire("SAMSUNG",40,0,2);
 
         aires.add(a1);
         aires.add(a2);
@@ -22,14 +22,20 @@ public class Main {
         a1.bajar();
         a1.bajar();
 
-        a2.subir();
-        a2.subir();
-        a2.subir();
     }catch (IllegalArgumentException e){
         System.out.println("Error de accion en la temperatura: "+ e.getMessage());
     }
 
-    for (Aire x: aires){
+        try {
+
+            a2.bajar();
+            a2.bajar();
+            a2.bajar();
+        }catch (IllegalArgumentException e){
+            System.out.println("Error de accion en la temperatura: "+ e.getMessage());
+        }
+
+        for (Aire x: aires){
             System.out.println(x);
         }
 
