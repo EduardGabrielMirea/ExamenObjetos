@@ -21,6 +21,7 @@ public class Main {
         a1.bajar();
         a1.bajar();
         a1.bajar();
+        a1.bajar();
 
     }catch (IllegalArgumentException e){
         System.out.println("Error de accion en la temperatura: "+ e.getMessage());
